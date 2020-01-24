@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище SmartMechModelContainer" CdmEntityContainer="Context">
+    <EntitySetMapping Name="Groups">
+      <EntityTypeMapping TypeName="SmartMechModel.Group">
+        <MappingFragment StoreEntitySet="Groups">
+          <ScalarProperty Name="IdGroup" ColumnName="IdGroup" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="SetName" ColumnName="SetName" />
+          <ScalarProperty Name="Day" ColumnName="Day" />
+          <ScalarProperty Name="IdTeacher" ColumnName="IdTeacher" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Students">
+      <EntityTypeMapping TypeName="SmartMechModel.Student">
+        <MappingFragment StoreEntitySet="Student">
+          <ScalarProperty Name="IdStudent" ColumnName="IdStudent" />
+          <ScalarProperty Name="FIO" ColumnName="FIO" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="FIOMother" ColumnName="FIOMother" />
+          <ScalarProperty Name="NumberMother" ColumnName="NumberMother" />
+          <ScalarProperty Name="IdGroup" ColumnName="IdGroup" />
+          <ScalarProperty Name="FIOFather" ColumnName="FIOFather" />
+          <ScalarProperty Name="NumberFather" ColumnName="NumberFather" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TablePays">
+      <EntityTypeMapping TypeName="SmartMechModel.TablePay">
+        <MappingFragment StoreEntitySet="TablePay">
+          <ScalarProperty Name="IdPay" ColumnName="IdPay" />
+          <ScalarProperty Name="FIO" ColumnName="FIO" />
+          <ScalarProperty Name="DatePay" ColumnName="DatePay" />
+          <ScalarProperty Name="DateStart" ColumnName="DateStart" />
+          <ScalarProperty Name="IdStudent" ColumnName="IdStudent" />
+          <ScalarProperty Name="CountPay" ColumnName="CountPay" />
+          <ScalarProperty Name="TypePay" ColumnName="TypePay" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TablePrisuts">
+      <EntityTypeMapping TypeName="SmartMechModel.TablePrisut">
+        <MappingFragment StoreEntitySet="TablePrisut">
+          <ScalarProperty Name="IdPrisut" ColumnName="IdPrisut" />
+          <ScalarProperty Name="IdStudent" ColumnName="IdStudent" />
+          <ScalarProperty Name="IdGroup" ColumnName="IdGroup" />
+          <ScalarProperty Name="FIO" ColumnName="FIO" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Prisut" ColumnName="Prisut" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Teachers">
+      <EntityTypeMapping TypeName="SmartMechModel.Teacher">
+        <MappingFragment StoreEntitySet="Teacher">
+          <ScalarProperty Name="IdTeacher" ColumnName="IdTeacher" />
+          <ScalarProperty Name="FIO" ColumnName="FIO" />
+          <ScalarProperty Name="MobilePhone" ColumnName="MobilePhone" />
+          <ScalarProperty Name="MailBox" ColumnName="MailBox" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

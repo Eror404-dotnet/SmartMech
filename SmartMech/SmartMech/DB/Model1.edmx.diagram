@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7ab7ce4f4386459aac7be513c161df02" Name="Diagram1">
+        <EntityTypeShape EntityType="SmartMechModel.Group" Width="1.5" PointX="3" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmartMechModel.Student" Width="1.5" PointX="5.25" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmartMechModel.TablePay" Width="1.5" PointX="7.5" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmartMechModel.TablePrisut" Width="1.5" PointX="10.5" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmartMechModel.Teacher" Width="1.5" PointX="0.75" PointY="3.125" IsExpanded="true" />
+        <AssociationConnector Association="SmartMechModel.FK_Groups_Teacher" ManuallyRouted="false" />
+        <AssociationConnector Association="SmartMechModel.FK_Student_Groups" ManuallyRouted="false" />
+        <AssociationConnector Association="SmartMechModel.FK_TablePrisut_Groups" ManuallyRouted="false" />
+        <AssociationConnector Association="SmartMechModel.FK_TablePay_Student" ManuallyRouted="false" />
+        <AssociationConnector Association="SmartMechModel.FK_TablePrisut_Student" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

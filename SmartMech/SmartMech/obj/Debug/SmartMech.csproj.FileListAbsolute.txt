@@ -1,0 +1,117 @@
+E:\Colledge\Махова А.Н\Практика 23.09-11.10\SmartMech\SmartMech\bin\Debug\SmartMech.exe.config
+E:\Colledge\Махова А.Н\Практика 23.09-11.10\SmartMech\SmartMech\bin\Debug\SmartMech.exe
+E:\Colledge\Махова А.Н\Практика 23.09-11.10\SmartMech\SmartMech\bin\Debug\SmartMech.pdb
+E:\Colledge\Махова А.Н\Практика 23.09-11.10\SmartMech\SmartMech\obj\Debug\SmartMech.csprojAssemblyReference.cache
+E:\Colledge\Махова А.Н\Практика 23.09-11.10\SmartMech\SmartMech\obj\Debug\SmartMech.Properties.Resources.resources
+E:\Colledge\Махова А.Н\Практика 23.09-11.10\SmartMech\SmartMech\obj\Debug\SmartMech.csproj.GenerateResource.cache
+E:\Colledge\Махова А.Н\Практика 23.09-11.10\SmartMech\SmartMech\obj\Debug\SmartMech.csproj.CoreCompileInputs.cache
+E:\Colledge\Махова А.Н\Практика 23.09-11.10\SmartMech\SmartMech\obj\Debug\SmartMech.exe
+E:\Colledge\Махова А.Н\Практика 23.09-11.10\SmartMech\SmartMech\obj\Debug\SmartMech.pdb
+E:\Colledge\Махова А.Н\Практика 23.09-11.10\SmartMech\SmartMech\bin\Debug\EntityFramework.dll
+E:\Colledge\Махова А.Н\Практика 23.09-11.10\SmartMech\SmartMech\bin\Debug\EntityFramework.SqlServer.dll
+E:\Colledge\Махова А.Н\Практика 23.09-11.10\SmartMech\SmartMech\bin\Debug\EntityFramework.xml
+E:\Colledge\Махова А.Н\Практика 23.09-11.10\SmartMech\SmartMech\bin\Debug\EntityFramework.SqlServer.xml
+E:\Colledge\Махова А.Н\Практика 23.09-11.10\SmartMech\SmartMech\bin\Debug\ru\EntityFramework.resources.dll
+E:\Colledge\Махова А.Н\Практика 23.09-11.10\SmartMech\SmartMech\obj\Debug\SmartMech.MainForm.resources
+E:\Colledge\Махова А.Н\Практика 23.09-11.10\SmartMech\SmartMech\obj\Debug\SmartMech.Forms.TeacherForm.resources
+E:\Colledge\Махова А.Н\Практика 23.09-11.10\SmartMech\SmartMech\obj\Debug\SmartMech.csproj.CopyComplete
+E:\Colledge\Махова А.Н\Практика 23.09-11.10\SmartMech\SmartMech\obj\Debug\SmartMech.Forms.StudentsFrom.resources
+E:\Colledge\Махова А.Н\Практика 23.09-11.10\SmartMech\SmartMech\obj\Debug\SmartMech.Forms.RedactForm.resources
+E:\Colledge\Махова А.Н\Практика 23.09-11.10\SmartMech\SmartMech\obj\Debug\SmartMech.Forms.RedactForms.TeacherRedactFrom.resources
+E:\Colledge\Махова А.Н\Практика 23.09-11.10\SmartMech\SmartMech\obj\Debug\SmartMech.Forms.RedactForms.AccessRedactForm.resources
+E:\Colledge\Махова А.Н\Практика 23.09-11.10\SmartMech\SmartMech\obj\Debug\SmartMech.Forms.RedactForms.EnterPassForm.resources
+E:\Colledge\Махова А.Н\Практика 23.09-11.10\SmartMech\SmartMech\obj\Debug\SmartMech.Forms.FormRedactSudents.resources
+E:\Colledge\Махова А.Н\Практика 23.09-11.10\SmartMech\SmartMech\obj\Debug\SmartMech.Forms.RedactForms.GroupRedactForm.resources
+C:\Users\Goner\Desktop\Проект умная механика\SmartMech\SmartMech\bin\Debug\SmartMech.exe.config
+C:\Users\Goner\Desktop\Проект умная механика\SmartMech\SmartMech\bin\Debug\SmartMech.exe
+C:\Users\Goner\Desktop\Проект умная механика\SmartMech\SmartMech\bin\Debug\SmartMech.pdb
+C:\Users\Goner\Desktop\Проект умная механика\SmartMech\SmartMech\bin\Debug\EntityFramework.dll
+C:\Users\Goner\Desktop\Проект умная механика\SmartMech\SmartMech\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Goner\Desktop\Проект умная механика\SmartMech\SmartMech\bin\Debug\EntityFramework.xml
+C:\Users\Goner\Desktop\Проект умная механика\SmartMech\SmartMech\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Goner\Desktop\Проект умная механика\SmartMech\SmartMech\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Goner\Desktop\Проект умная механика\SmartMech\SmartMech\obj\Debug\SmartMech.csprojAssemblyReference.cache
+C:\Users\Goner\Desktop\Проект умная механика\SmartMech\SmartMech\obj\Debug\SmartMech.Forms.RedactForms.GroupRedactForm.resources
+C:\Users\Goner\Desktop\Проект умная механика\SmartMech\SmartMech\obj\Debug\SmartMech.Forms.FormRedactSudents.resources
+C:\Users\Goner\Desktop\Проект умная механика\SmartMech\SmartMech\obj\Debug\SmartMech.MainForm.resources
+C:\Users\Goner\Desktop\Проект умная механика\SmartMech\SmartMech\obj\Debug\SmartMech.Forms.RedactForm.resources
+C:\Users\Goner\Desktop\Проект умная механика\SmartMech\SmartMech\obj\Debug\SmartMech.Forms.RedactForms.TeacherRedactFrom.resources
+C:\Users\Goner\Desktop\Проект умная механика\SmartMech\SmartMech\obj\Debug\SmartMech.Forms.StudentsFrom.resources
+C:\Users\Goner\Desktop\Проект умная механика\SmartMech\SmartMech\obj\Debug\SmartMech.Forms.TeacherForm.resources
+C:\Users\Goner\Desktop\Проект умная механика\SmartMech\SmartMech\obj\Debug\SmartMech.Properties.Resources.resources
+C:\Users\Goner\Desktop\Проект умная механика\SmartMech\SmartMech\obj\Debug\SmartMech.csproj.GenerateResource.cache
+C:\Users\Goner\Desktop\Проект умная механика\SmartMech\SmartMech\obj\Debug\SmartMech.csproj.CoreCompileInputs.cache
+C:\Users\Goner\Desktop\Проект умная механика\SmartMech\SmartMech\obj\Debug\SmartMech.csproj.CopyComplete
+C:\Users\Goner\Desktop\Проект умная механика\SmartMech\SmartMech\obj\Debug\SmartMech.exe
+C:\Users\Goner\Desktop\Проект умная механика\SmartMech\SmartMech\obj\Debug\SmartMech.pdb
+C:\Users\Goner\Desktop\Проект умная механика\SmartMech\SmartMech\obj\Debug\SmartMech.Forms.PayForm.resources
+C:\Users\Goner\Desktop\Проект умная механика\SmartMech\SmartMech\obj\Debug\SmartMech.Forms.PrisutForm.resources
+E:\Other\Проекты C#\Проект умная механика\SmartMech\SmartMech\bin\Debug\SmartMech.exe.config
+E:\Other\Проекты C#\Проект умная механика\SmartMech\SmartMech\bin\Debug\SmartMech.exe
+E:\Other\Проекты C#\Проект умная механика\SmartMech\SmartMech\bin\Debug\SmartMech.pdb
+E:\Other\Проекты C#\Проект умная механика\SmartMech\SmartMech\bin\Debug\EntityFramework.dll
+E:\Other\Проекты C#\Проект умная механика\SmartMech\SmartMech\bin\Debug\EntityFramework.SqlServer.dll
+E:\Other\Проекты C#\Проект умная механика\SmartMech\SmartMech\bin\Debug\EntityFramework.xml
+E:\Other\Проекты C#\Проект умная механика\SmartMech\SmartMech\bin\Debug\EntityFramework.SqlServer.xml
+E:\Other\Проекты C#\Проект умная механика\SmartMech\SmartMech\bin\Debug\ru\EntityFramework.resources.dll
+E:\Other\Проекты C#\Проект умная механика\SmartMech\SmartMech\obj\Debug\SmartMech.csprojAssemblyReference.cache
+E:\Other\Проекты C#\Проект умная механика\SmartMech\SmartMech\obj\Debug\SmartMech.Forms.PayForm.resources
+E:\Other\Проекты C#\Проект умная механика\SmartMech\SmartMech\obj\Debug\SmartMech.Forms.PrisutForm.resources
+E:\Other\Проекты C#\Проект умная механика\SmartMech\SmartMech\obj\Debug\SmartMech.Forms.RedactForms.GroupRedactForm.resources
+E:\Other\Проекты C#\Проект умная механика\SmartMech\SmartMech\obj\Debug\SmartMech.Forms.FormRedactSudents.resources
+E:\Other\Проекты C#\Проект умная механика\SmartMech\SmartMech\obj\Debug\SmartMech.MainForm.resources
+E:\Other\Проекты C#\Проект умная механика\SmartMech\SmartMech\obj\Debug\SmartMech.Forms.RedactForm.resources
+E:\Other\Проекты C#\Проект умная механика\SmartMech\SmartMech\obj\Debug\SmartMech.Forms.RedactForms.TeacherRedactFrom.resources
+E:\Other\Проекты C#\Проект умная механика\SmartMech\SmartMech\obj\Debug\SmartMech.Forms.StudentsFrom.resources
+E:\Other\Проекты C#\Проект умная механика\SmartMech\SmartMech\obj\Debug\SmartMech.Forms.TeacherForm.resources
+E:\Other\Проекты C#\Проект умная механика\SmartMech\SmartMech\obj\Debug\SmartMech.Properties.Resources.resources
+E:\Other\Проекты C#\Проект умная механика\SmartMech\SmartMech\obj\Debug\SmartMech.csproj.GenerateResource.cache
+E:\Other\Проекты C#\Проект умная механика\SmartMech\SmartMech\obj\Debug\SmartMech.csproj.CopyComplete
+E:\Other\Проекты C#\Проект умная механика\SmartMech\SmartMech\obj\Debug\SmartMech.exe
+E:\Other\Проекты C#\Проект умная механика\SmartMech\SmartMech\obj\Debug\SmartMech.pdb
+E:\ProjectC#\ProjectSmartMech\SmartMech\SmartMech\bin\Debug\SmartMech.exe.config
+E:\ProjectC#\ProjectSmartMech\SmartMech\SmartMech\bin\Debug\SmartMech.exe
+E:\ProjectC#\ProjectSmartMech\SmartMech\SmartMech\bin\Debug\SmartMech.pdb
+E:\ProjectC#\ProjectSmartMech\SmartMech\SmartMech\bin\Debug\EntityFramework.dll
+E:\ProjectC#\ProjectSmartMech\SmartMech\SmartMech\bin\Debug\EntityFramework.SqlServer.dll
+E:\ProjectC#\ProjectSmartMech\SmartMech\SmartMech\bin\Debug\EntityFramework.xml
+E:\ProjectC#\ProjectSmartMech\SmartMech\SmartMech\bin\Debug\EntityFramework.SqlServer.xml
+E:\ProjectC#\ProjectSmartMech\SmartMech\SmartMech\bin\Debug\ru\EntityFramework.resources.dll
+E:\ProjectC#\ProjectSmartMech\SmartMech\SmartMech\obj\Debug\SmartMech.csprojAssemblyReference.cache
+E:\ProjectC#\ProjectSmartMech\SmartMech\SmartMech\obj\Debug\SmartMech.Forms.PayForm.resources
+E:\ProjectC#\ProjectSmartMech\SmartMech\SmartMech\obj\Debug\SmartMech.Forms.PrisutForm.resources
+E:\ProjectC#\ProjectSmartMech\SmartMech\SmartMech\obj\Debug\SmartMech.Forms.RedactForms.GroupRedactForm.resources
+E:\ProjectC#\ProjectSmartMech\SmartMech\SmartMech\obj\Debug\SmartMech.Forms.FormRedactSudents.resources
+E:\ProjectC#\ProjectSmartMech\SmartMech\SmartMech\obj\Debug\SmartMech.MainForm.resources
+E:\ProjectC#\ProjectSmartMech\SmartMech\SmartMech\obj\Debug\SmartMech.Forms.RedactForm.resources
+E:\ProjectC#\ProjectSmartMech\SmartMech\SmartMech\obj\Debug\SmartMech.Forms.RedactForms.TeacherRedactFrom.resources
+E:\ProjectC#\ProjectSmartMech\SmartMech\SmartMech\obj\Debug\SmartMech.Forms.StudentsFrom.resources
+E:\ProjectC#\ProjectSmartMech\SmartMech\SmartMech\obj\Debug\SmartMech.Forms.TeacherForm.resources
+E:\ProjectC#\ProjectSmartMech\SmartMech\SmartMech\obj\Debug\SmartMech.Properties.Resources.resources
+E:\ProjectC#\ProjectSmartMech\SmartMech\SmartMech\obj\Debug\SmartMech.csproj.GenerateResource.cache
+E:\ProjectC#\ProjectSmartMech\SmartMech\SmartMech\obj\Debug\SmartMech.csproj.CopyComplete
+E:\ProjectC#\ProjectSmartMech\SmartMech\SmartMech\obj\Debug\SmartMech.exe
+E:\ProjectC#\ProjectSmartMech\SmartMech\SmartMech\obj\Debug\SmartMech.pdb
+D:\ProjectC#\Local\ProjectSmartMech\SmartMech\SmartMech\bin\Debug\SmartMech.exe.config
+D:\ProjectC#\Local\ProjectSmartMech\SmartMech\SmartMech\bin\Debug\SmartMech.exe
+D:\ProjectC#\Local\ProjectSmartMech\SmartMech\SmartMech\bin\Debug\SmartMech.pdb
+D:\ProjectC#\Local\ProjectSmartMech\SmartMech\SmartMech\bin\Debug\EntityFramework.dll
+D:\ProjectC#\Local\ProjectSmartMech\SmartMech\SmartMech\bin\Debug\EntityFramework.SqlServer.dll
+D:\ProjectC#\Local\ProjectSmartMech\SmartMech\SmartMech\bin\Debug\EntityFramework.xml
+D:\ProjectC#\Local\ProjectSmartMech\SmartMech\SmartMech\bin\Debug\EntityFramework.SqlServer.xml
+D:\ProjectC#\Local\ProjectSmartMech\SmartMech\SmartMech\bin\Debug\ru\EntityFramework.resources.dll
+D:\ProjectC#\Local\ProjectSmartMech\SmartMech\SmartMech\obj\Debug\SmartMech.csprojAssemblyReference.cache
+D:\ProjectC#\Local\ProjectSmartMech\SmartMech\SmartMech\obj\Debug\SmartMech.Forms.PayForm.resources
+D:\ProjectC#\Local\ProjectSmartMech\SmartMech\SmartMech\obj\Debug\SmartMech.Forms.PrisutForm.resources
+D:\ProjectC#\Local\ProjectSmartMech\SmartMech\SmartMech\obj\Debug\SmartMech.Forms.RedactForms.GroupRedactForm.resources
+D:\ProjectC#\Local\ProjectSmartMech\SmartMech\SmartMech\obj\Debug\SmartMech.Forms.FormRedactSudents.resources
+D:\ProjectC#\Local\ProjectSmartMech\SmartMech\SmartMech\obj\Debug\SmartMech.MainForm.resources
+D:\ProjectC#\Local\ProjectSmartMech\SmartMech\SmartMech\obj\Debug\SmartMech.Forms.RedactForm.resources
+D:\ProjectC#\Local\ProjectSmartMech\SmartMech\SmartMech\obj\Debug\SmartMech.Forms.RedactForms.TeacherRedactFrom.resources
+D:\ProjectC#\Local\ProjectSmartMech\SmartMech\SmartMech\obj\Debug\SmartMech.Forms.StudentsFrom.resources
+D:\ProjectC#\Local\ProjectSmartMech\SmartMech\SmartMech\obj\Debug\SmartMech.Forms.TeacherForm.resources
+D:\ProjectC#\Local\ProjectSmartMech\SmartMech\SmartMech\obj\Debug\SmartMech.Properties.Resources.resources
+D:\ProjectC#\Local\ProjectSmartMech\SmartMech\SmartMech\obj\Debug\SmartMech.csproj.GenerateResource.cache
+D:\ProjectC#\Local\ProjectSmartMech\SmartMech\SmartMech\obj\Debug\SmartMech.csproj.CopyComplete
+D:\ProjectC#\Local\ProjectSmartMech\SmartMech\SmartMech\obj\Debug\SmartMech.exe
+D:\ProjectC#\Local\ProjectSmartMech\SmartMech\SmartMech\obj\Debug\SmartMech.pdb

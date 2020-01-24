@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Хранилище SmartMechModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Groups">
+          <Key>
+            <PropertyRef Name="IdGroup" />
+          </Key>
+          <Property Name="IdGroup" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="GroupName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="SetName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Day" Type="date" Nullable="false" />
+          <Property Name="IdTeacher" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Student">
+          <Key>
+            <PropertyRef Name="IdStudent" />
+          </Key>
+          <Property Name="IdStudent" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FIO" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Age" Type="int" Nullable="false" />
+          <Property Name="FIOMother" Type="nvarchar" MaxLength="50" />
+          <Property Name="NumberMother" Type="nvarchar" MaxLength="10" />
+          <Property Name="IdGroup" Type="int" Nullable="false" />
+          <Property Name="FIOFather" Type="nvarchar" MaxLength="50" />
+          <Property Name="NumberFather" Type="nvarchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="TablePay">
+          <Key>
+            <PropertyRef Name="IdPay" />
+          </Key>
+          <Property Name="IdPay" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FIO" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DatePay" Type="date" Nullable="false" />
+          <Property Name="DateStart" Type="date" Nullable="false" />
+          <Property Name="IdStudent" Type="int" Nullable="false" />
+          <Property Name="CountPay" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="TypePay" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TablePrisut">
+          <Key>
+            <PropertyRef Name="IdPrisut" />
+          </Key>
+          <Property Name="IdPrisut" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IdStudent" Type="int" Nullable="false" />
+          <Property Name="IdGroup" Type="int" Nullable="false" />
+          <Property Name="FIO" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="GroupName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Date" Type="date" Nullable="false" />
+          <Property Name="Prisut" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Teacher">
+          <Key>
+            <PropertyRef Name="IdTeacher" />
+          </Key>
+          <Property Name="IdTeacher" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FIO" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="MobilePhone" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="MailBox" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_Groups_Teacher">
+          <End Role="Teacher" Type="Self.Teacher" Multiplicity="1" />
+          <End Role="Groups" Type="Self.Groups" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Teacher">
+              <PropertyRef Name="IdTeacher" />
+            </Principal>
+            <Dependent Role="Groups">
+              <PropertyRef Name="IdTeacher" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Student_Groups">
+          <End Role="Groups" Type="Self.Groups" Multiplicity="1" />
+          <End Role="Student" Type="Self.Student" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Groups">
+              <PropertyRef Name="IdGroup" />
+            </Principal>
+            <Dependent Role="Student">
+              <PropertyRef Name="IdGroup" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TablePay_Student">
+          <End Role="Student" Type="Self.Student" Multiplicity="1" />
+          <End Role="TablePay" Type="Self.TablePay" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Student">
+              <PropertyRef Name="IdStudent" />
+            </Principal>
+            <Dependent Role="TablePay">
+              <PropertyRef Name="IdStudent" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TablePrisut_Groups">
+          <End Role="Groups" Type="Self.Groups" Multiplicity="1" />
+          <End Role="TablePrisut" Type="Self.TablePrisut" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Groups">
+              <PropertyRef Name="IdGroup" />
+            </Principal>
+            <Dependent Role="TablePrisut">
+              <PropertyRef Name="IdGroup" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TablePrisut_Student">
+          <End Role="Student" Type="Self.Student" Multiplicity="1" />
+          <End Role="TablePrisut" Type="Self.TablePrisut" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Student">
+              <PropertyRef Name="IdStudent" />
+            </Principal>
+            <Dependent Role="TablePrisut">
+              <PropertyRef Name="IdStudent" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Хранилище SmartMechModelContainer">
+          <EntitySet Name="Groups" EntityType="Self.Groups" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Student" EntityType="Self.Student" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TablePay" EntityType="Self.TablePay" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TablePrisut" EntityType="Self.TablePrisut" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Teacher" EntityType="Self.Teacher" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Groups_Teacher" Association="Self.FK_Groups_Teacher">
+            <End Role="Teacher" EntitySet="Teacher" />
+            <End Role="Groups" EntitySet="Groups" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Student_Groups" Association="Self.FK_Student_Groups">
+            <End Role="Groups" EntitySet="Groups" />
+            <End Role="Student" EntitySet="Student" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TablePay_Student" Association="Self.FK_TablePay_Student">
+            <End Role="Student" EntitySet="Student" />
+            <End Role="TablePay" EntitySet="TablePay" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TablePrisut_Groups" Association="Self.FK_TablePrisut_Groups">
+            <End Role="Groups" EntitySet="Groups" />
+            <End Role="TablePrisut" EntitySet="TablePrisut" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TablePrisut_Student" Association="Self.FK_TablePrisut_Student">
+            <End Role="Student" EntitySet="Student" />
+            <End Role="TablePrisut" EntitySet="TablePrisut" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SmartMechModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Group">
+          <Key>
+            <PropertyRef Name="IdGroup" />
+          </Key>
+          <Property Name="IdGroup" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="GroupName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SetName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Day" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="IdTeacher" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Teacher" Relationship="Self.FK_Groups_Teacher" FromRole="Groups" ToRole="Teacher" />
+          <NavigationProperty Name="Students" Relationship="Self.FK_Student_Groups" FromRole="Groups" ToRole="Student" />
+          <NavigationProperty Name="TablePrisuts" Relationship="Self.FK_TablePrisut_Groups" FromRole="Groups" ToRole="TablePrisut" />
+        </EntityType>
+        <EntityType Name="Student">
+          <Key>
+            <PropertyRef Name="IdStudent" />
+          </Key>
+          <Property Name="IdStudent" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FIO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Age" Type="Int32" Nullable="false" />
+          <Property Name="FIOMother" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NumberMother" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="IdGroup" Type="Int32" Nullable="false" />
+          <Property Name="FIOFather" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NumberFather" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Group" Relationship="Self.FK_Student_Groups" FromRole="Student" ToRole="Groups" />
+          <NavigationProperty Name="TablePays" Relationship="Self.FK_TablePay_Student" FromRole="Student" ToRole="TablePay" />
+          <NavigationProperty Name="TablePrisuts" Relationship="Self.FK_TablePrisut_Student" FromRole="Student" ToRole="TablePrisut" />
+        </EntityType>
+        <EntityType Name="TablePay">
+          <Key>
+            <PropertyRef Name="IdPay" />
+          </Key>
+          <Property Name="IdPay" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FIO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DatePay" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="DateStart" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="IdStudent" Type="Int32" Nullable="false" />
+          <Property Name="CountPay" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TypePay" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Student" Relationship="Self.FK_TablePay_Student" FromRole="TablePay" ToRole="Student" />
+        </EntityType>
+        <EntityType Name="TablePrisut">
+          <Key>
+            <PropertyRef Name="IdPrisut" />
+          </Key>
+          <Property Name="IdPrisut" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdStudent" Type="Int32" Nullable="false" />
+          <Property Name="IdGroup" Type="Int32" Nullable="false" />
+          <Property Name="FIO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="GroupName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Prisut" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Group" Relationship="Self.FK_TablePrisut_Groups" FromRole="TablePrisut" ToRole="Groups" />
+          <NavigationProperty Name="Student" Relationship="Self.FK_TablePrisut_Student" FromRole="TablePrisut" ToRole="Student" />
+        </EntityType>
+        <EntityType Name="Teacher">
+          <Key>
+            <PropertyRef Name="IdTeacher" />
+          </Key>
+          <Property Name="IdTeacher" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FIO" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MobilePhone" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MailBox" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Groups" Relationship="Self.FK_Groups_Teacher" FromRole="Teacher" ToRole="Groups" />
+        </EntityType>
+        <Association Name="FK_Groups_Teacher">
+          <End Role="Teacher" Type="Self.Teacher" Multiplicity="1" />
+          <End Role="Groups" Type="Self.Group" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Teacher">
+              <PropertyRef Name="IdTeacher" />
+            </Principal>
+            <Dependent Role="Groups">
+              <PropertyRef Name="IdTeacher" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Student_Groups">
+          <End Role="Groups" Type="Self.Group" Multiplicity="1" />
+          <End Role="Student" Type="Self.Student" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Groups">
+              <PropertyRef Name="IdGroup" />
+            </Principal>
+            <Dependent Role="Student">
+              <PropertyRef Name="IdGroup" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TablePrisut_Groups">
+          <End Role="Groups" Type="Self.Group" Multiplicity="1" />
+          <End Role="TablePrisut" Type="Self.TablePrisut" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Groups">
+              <PropertyRef Name="IdGroup" />
+            </Principal>
+            <Dependent Role="TablePrisut">
+              <PropertyRef Name="IdGroup" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TablePay_Student">
+          <End Role="Student" Type="Self.Student" Multiplicity="1" />
+          <End Role="TablePay" Type="Self.TablePay" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Student">
+              <PropertyRef Name="IdStudent" />
+            </Principal>
+            <Dependent Role="TablePay">
+              <PropertyRef Name="IdStudent" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TablePrisut_Student">
+          <End Role="Student" Type="Self.Student" Multiplicity="1" />
+          <End Role="TablePrisut" Type="Self.TablePrisut" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Student">
+              <PropertyRef Name="IdStudent" />
+            </Principal>
+            <Dependent Role="TablePrisut">
+              <PropertyRef Name="IdStudent" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Context" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Groups" EntityType="Self.Group" />
+          <EntitySet Name="Students" EntityType="Self.Student" />
+          <EntitySet Name="TablePays" EntityType="Self.TablePay" />
+          <EntitySet Name="TablePrisuts" EntityType="Self.TablePrisut" />
+          <EntitySet Name="Teachers" EntityType="Self.Teacher" />
+          <AssociationSet Name="FK_Groups_Teacher" Association="Self.FK_Groups_Teacher">
+            <End Role="Teacher" EntitySet="Teachers" />
+            <End Role="Groups" EntitySet="Groups" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Student_Groups" Association="Self.FK_Student_Groups">
+            <End Role="Groups" EntitySet="Groups" />
+            <End Role="Student" EntitySet="Students" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TablePrisut_Groups" Association="Self.FK_TablePrisut_Groups">
+            <End Role="Groups" EntitySet="Groups" />
+            <End Role="TablePrisut" EntitySet="TablePrisuts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TablePay_Student" Association="Self.FK_TablePay_Student">
+            <End Role="Student" EntitySet="Students" />
+            <End Role="TablePay" EntitySet="TablePays" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TablePrisut_Student" Association="Self.FK_TablePrisut_Student">
+            <End Role="Student" EntitySet="Students" />
+            <End Role="TablePrisut" EntitySet="TablePrisuts" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище SmartMechModelContainer" CdmEntityContainer="Context">
+          <EntitySetMapping Name="Groups">
+            <EntityTypeMapping TypeName="SmartMechModel.Group">
+              <MappingFragment StoreEntitySet="Groups">
+                <ScalarProperty Name="IdGroup" ColumnName="IdGroup" />
+                <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+                <ScalarProperty Name="SetName" ColumnName="SetName" />
+                <ScalarProperty Name="Day" ColumnName="Day" />
+                <ScalarProperty Name="IdTeacher" ColumnName="IdTeacher" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Students">
+            <EntityTypeMapping TypeName="SmartMechModel.Student">
+              <MappingFragment StoreEntitySet="Student">
+                <ScalarProperty Name="IdStudent" ColumnName="IdStudent" />
+                <ScalarProperty Name="FIO" ColumnName="FIO" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="FIOMother" ColumnName="FIOMother" />
+                <ScalarProperty Name="NumberMother" ColumnName="NumberMother" />
+                <ScalarProperty Name="IdGroup" ColumnName="IdGroup" />
+                <ScalarProperty Name="FIOFather" ColumnName="FIOFather" />
+                <ScalarProperty Name="NumberFather" ColumnName="NumberFather" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TablePays">
+            <EntityTypeMapping TypeName="SmartMechModel.TablePay">
+              <MappingFragment StoreEntitySet="TablePay">
+                <ScalarProperty Name="IdPay" ColumnName="IdPay" />
+                <ScalarProperty Name="FIO" ColumnName="FIO" />
+                <ScalarProperty Name="DatePay" ColumnName="DatePay" />
+                <ScalarProperty Name="DateStart" ColumnName="DateStart" />
+                <ScalarProperty Name="IdStudent" ColumnName="IdStudent" />
+                <ScalarProperty Name="CountPay" ColumnName="CountPay" />
+                <ScalarProperty Name="TypePay" ColumnName="TypePay" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TablePrisuts">
+            <EntityTypeMapping TypeName="SmartMechModel.TablePrisut">
+              <MappingFragment StoreEntitySet="TablePrisut">
+                <ScalarProperty Name="IdPrisut" ColumnName="IdPrisut" />
+                <ScalarProperty Name="IdStudent" ColumnName="IdStudent" />
+                <ScalarProperty Name="IdGroup" ColumnName="IdGroup" />
+                <ScalarProperty Name="FIO" ColumnName="FIO" />
+                <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Prisut" ColumnName="Prisut" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Teachers">
+            <EntityTypeMapping TypeName="SmartMechModel.Teacher">
+              <MappingFragment StoreEntitySet="Teacher">
+                <ScalarProperty Name="IdTeacher" ColumnName="IdTeacher" />
+                <ScalarProperty Name="FIO" ColumnName="FIO" />
+                <ScalarProperty Name="MobilePhone" ColumnName="MobilePhone" />
+                <ScalarProperty Name="MailBox" ColumnName="MailBox" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
